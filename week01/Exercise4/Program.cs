@@ -36,7 +36,7 @@ class Program
         Console.WriteLine($"The sum is: {sum}");
 
         float average = (float)sum / numbers.Count;
-        Console.WriteLine($"The average is: {average}");
+        Console.WriteLine($"The average is: {average:F2}");
 
         int max = numbers[0];
         foreach (int number in numbers)
