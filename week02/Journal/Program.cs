@@ -4,6 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Fr my creativity
+        // I added this program allows the user to record their mood for each journal entry.
+        // The mood is saved along with the date, prompt, and journal entry.
         Journal journal = new Journal();
         PromptGenerator promptGenerator = new PromptGenerator();
 
@@ -38,10 +41,14 @@ class Program
                 Console.Write("> ");
                 string entryText = Console.ReadLine();
 
+                Console.Write("How was your mood today?");
+                string mood = Console.ReadLine();
+
                 Entry entry = new Entry();
                 entry._date = DateTime.Now.ToShortDateString();
                 entry._promptText = prompt;
                 entry._entryText = entryText;
+                entry._mood = mood;
 
                 journal.AddEntry(entry);
             }
