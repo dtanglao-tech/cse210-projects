@@ -7,6 +7,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        // I added to Loads scriptures form a file and to Randomly slects a scripture.
         List<Scripture> scriptures = LoadScriptures("scriptures.txt");
         if (scriptures.Count == 0)
         {
