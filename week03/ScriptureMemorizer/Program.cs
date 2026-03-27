@@ -7,7 +7,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // I added to Loads scriptures form a file and to Randomly slects a scripture.
+        // I added to Loads scriptures form a file and to Randomly selects a scripture.
         List<Scripture> scriptures = LoadScriptures("scriptures.txt");
         if (scriptures.Count == 0)
         {
@@ -31,6 +31,9 @@ class Program
 
             else 
                 input = "";
+
+            if (input == "quit")
+                break;
 
             if (scripture.IsCompletelyHidden())
                 break;  
